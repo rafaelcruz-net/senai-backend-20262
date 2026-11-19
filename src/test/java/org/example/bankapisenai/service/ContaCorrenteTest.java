@@ -17,7 +17,7 @@ public class ContaCorrenteTest {
 
         var result = service.realizarSaque(new BigDecimal(500), cc);
 
-        assertTrue(result.getSaldo() == new  BigDecimal(1000));
+        assertTrue(result.getSaldo().equals(new  BigDecimal(1000)));
     }
     
 }
